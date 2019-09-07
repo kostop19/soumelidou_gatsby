@@ -2,21 +2,14 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import './index.css';
+import FeaturedArea from "../components/featuredArea";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-    <div className="container-fluid featured-container">
-      <div className="container">
-      <div className="featured-text">
-        <h2>Ελένη Σουμελίδου </h2>
-        <div style={{width:50, height:4, backgroundColor:'#202528', margin:'10px 0'}}></div>
-        <h3>Ψυχολόγος MSc, Ψυχοδυναμική Ψυχοθεραπεύτρια - Αναλύτρια
-        Ομάδας, Ζεύγους & Οικογένειας</h3>
-      </div>
-      </div>
-    </div>
+  <FeaturedArea title="Ελένη Σουμελίδου" subTitle="Ψυχολόγος MSc, Ψυχοδυναμική Ψυχοθεραπεύτρια - Αναλύτρια Ομάδας,
+          Ζεύγους & Οικογένειας"/>
 
     <div
       className="container front_page_container"

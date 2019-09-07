@@ -13,7 +13,7 @@ const Header = ({ siteTitle, description }) => (
       <Link to="/contact">
         <li>Επικοινωνία</li>
       </Link>
-      <li>Υπηρεσίες</li>
+      <Link to="/services"> <li>Υπηρεσίες</li></Link>
     </ul>
     <Link to="/">
       <div className="logo-section">
