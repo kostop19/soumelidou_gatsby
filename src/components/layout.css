@@ -1,7 +1,4 @@
-.first-section-row {
- 
 
-}
 
 .section-row {
   border-top: 2px solid #efefef;
@@ -23,7 +20,7 @@ input[type=email], input[type=password], input[type=text], select, input[type=te
   padding: 0 .75em;
   text-decoration: none;
   width: 100%;
-  margin-bottom:12px;
+  margin-bottom:12px!important;
 }
 
 .button, input[type=button], input[type=reset], input[type=submit] {
@@ -54,4 +51,12 @@ textarea{
 
 input[type=text]{
   height: 2.75em;
+}
+
+
+
+footer{
+  text-align: center;
+  padding: 24px;
+  border-top: 1px solid #ededed;
 }

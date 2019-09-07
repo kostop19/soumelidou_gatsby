@@ -1,17 +1,29 @@
 import React from "react";
-import Image from "../../components/image"
-import HeaderTitle from "./headerTitle";
-import "./header.css"
-
+import { Link } from "gatsby";
+import "./header.css";
 
 const Header = ({ siteTitle, description }) => (
-  <div 
-  className="header-container"
-  >
-    <HeaderTitle siteTitle={siteTitle} description={description}/>
-    <div className="header-black-overlay" style={{width:'100%', height:'100%', backgroundColor: "rgba(0,0,0,.2)"}}></div>
-    {/* <div className="mobile-image"><Image /></div> */}
-  </div>
+  <section className="top-nav">
+    <input id="menu-toggle" type="checkbox" />
+    <label className="menu-button-container" htmlFor="menu-toggle">
+      <div className="menu-button"></div>
+    </label>
+    <ul className="menu">
+      <li>Βιογραφικό</li>
+      <Link to="/contact">
+        <li>Επικοινωνία</li>
+      </Link>
+      <li>Υπηρεσίες</li>
+    </ul>
+    <Link to="/">
+      <div className="logo-section">
+        <div className="logo-content">
+          ΕΛΕΝΗ ΣΟΥΜΕΛΙΔΟΥ
+          <div className="logo"></div>
+        </div>
+      </div>
+    </Link>
+  </section>
 );
 
 export default Header;

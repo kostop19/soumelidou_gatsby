@@ -1,48 +1,57 @@
 import React from "react";
-import { Link } from "gatsby";
-import Box from "../components/boxes/box";
-import Description from "../components/description/description";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import ContactForm from '../components/contactForm/contactForm'
+import './index.css';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-    <div className="container">
-      <div className="row first-section-row">
-      <Description title="Λιγα λογια για εμένα">
-        Η οικονομική κρίση που βιώνει ο κάθε άνθρωπος οδηγεί σε ψυχοπιεστικές
-        καταστάσεις ανισορροπίας, καταστάσεις που αφορούν στην προσωπική,
-        οικογενειακή, κοινωνική και επαγγελματική του ζωή. Η κοινωνική απομόνωση
-        αποτελεί εξίσου δυνητικό παράγοντα στη ζωή του κάθε ανθρώπου. Ο
-        αυτοτραυματισμός και η αυτοκτονική συμπεριφορά παιδιών, εφήβων και
-        ενηλίκων συνιστά ένα σοβαρό πρόβλημα ψυχικής υγείας διεθνώς.
-      </Description>
-      <input type="button" value="Περισσότερα"/>
+    <div className="container-fluid featured-container">
+      <div className="container">
+      <div className="featured-text">
+        <h2>Ελένη Σουμελίδου </h2>
+        <div style={{width:50, height:4, backgroundColor:'#202528', margin:'10px 0'}}></div>
+        <h3>Ψυχολόγος MSc, Ψυχοδυναμική Ψυχοθεραπεύτρια - Αναλύτρια
+        Ομάδας, Ζεύγους & Οικογένειας</h3>
       </div>
-      <div className="row section-row">
-        <div className="col-md-6" style={{ padding: "0px" }}>
-          <Box title={"Λίγα λόγια για Εμένα"} backgroundColor={"#d78632"} />
-        </div>
-        <div className="col-md-6" style={{ padding: "0px" }}>
-          <Box title={"Ο χώρος"} backgroundColor={"#09ae82"} />
-        </div>
-        <div className="col-md-6" style={{ padding: "0px" }}>
-          <Box title={"Υπηρεσίες"} backgroundColor={"#faccd0"} />
-        </div>
-        <div className="col-md-6" style={{ padding: "0px" }}>
-          <Link to="/contact/">
-            <Box title={"Επικοινωνία"} backgroundColor={"#016477"} />
-          </Link>
-        </div>
       </div>
-      <div className="row section-row">
-      <Description title="Επικοινωνία">
-      Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.
-      </Description>
-        <ContactForm/>
+    </div>
+
+    <div
+      className="container front_page_container"
+      style={{ marginTop: 34, marginBottom: 24 }}
+    >
+      <div className="row">
+        <div class="col-md-1"></div>
+        <div className="col-md-9 ">
+          <h5> Η Ελενη Σουμελίδου γεννήθηκε και μεγάλωσε στην Αθήνα.</h5>
+          <p>
+            Σπούδασε ψυχολογία στο Αμερικάνικο Κολλέγιο Ελλάδος και απέκτησε το
+            μεταπτυχιακό της από το Πανεπιστήμιο του KENT στην Αγγλία με
+            αντικείμενο την ψυχοθεραπεία. Εκεί, μελέτησε όλα τα μοντέλα
+            ψυχοθεραπείας με κυρίως έμφαση στο ψυχαναλυτικο μοντέλο, ενώ,
+            δούλεψε εθελοντικά στο νοσοκομείο St.Martins με ασθενείς σε ατομικό
+            αλλά και ομαδικό πλαίσιο.{" "}
+          </p>
+          <p>
+            Στη συνέχεια, εκπαιδεύτηκε για 5 χρόνια στην Ελληνική Εταιρεία
+            Αναλυτικής Ομαδικής και Οικογενειακής Ψυχοθεραπείας στην ομαδική
+            ψυχοθεραπέια, στην οικογενειακή ψυχοθεραπεία και στην ψυχοθεραπεία
+            ζεύγους. Έπειτα, ολοκλήρωσε το εκπαιδευτικό πρόγραμμα του
+            International Psychotherapy Institute όπου εξειδικεύτηκε στην
+            ψυχοθεραπεία ζέυγους. Παράλληλα, εκπαιδεύτηκε στην χρήση και
+            ερμηνεία του τεστ θεματικής αντίληψης ΤΑΤ και του τεστ
+            προσωπικότητας MMPI-2.
+          </p>
+          <p>
+            Είναι μέλος του Mέλος του British Psychological society (BPS) και
+            του Canterbury Consortium of Psychoanalytic and Psychodynamic
+            Psychotherapists (CCOPPP). Επίσης, είναι πρόσεδρο μέλος της
+            Ελληνικής Εταιρείας Αναλυτικής Ομαδικής και Οικογενειακής
+            Ψυχοθεραπείας.
+          </p>
+        </div>
       </div>
     </div>
   </Layout>
