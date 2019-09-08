@@ -45,7 +45,7 @@ const IndexPage = () => (
             Ελληνικής Εταιρείας Αναλυτικής Ομαδικής και Οικογενειακής
             Ψυχοθεραπείας.
           </p>
-          <div className="green_circle"></div>
+        
           {/* <img src="../images/green_circle.png" alt="circle"/> */}
         </div>
       </div>
