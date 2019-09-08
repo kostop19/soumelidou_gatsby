@@ -1,23 +1,24 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+
 import './index.css';
 import FeaturedArea from "../components/featuredArea";
-
+const bgImage = require('../images/logo_background.jpg')
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-  <FeaturedArea title="Ελένη Σουμελίδου" subTitle="Ψυχολόγος MSc, Ψυχοδυναμική Ψυχοθεραπεύτρια - Αναλύτρια Ομάδας,
-          Ζεύγους & Οικογένειας"/>
-
+  <FeaturedArea title="ΕΛΕΝΗ ΣΟΥΜΕΛΙΔΟΥ" subTitle="Ψυχολόγος MSc, Ψυχοδυναμική Ψυχοθεραπεύτρια - Αναλύτρια Ομάδας,
+          Ζεύγους & Οικογένειας" overlay={true} img={bgImage}/>
+      
     <div
       className="container front_page_container"
-      style={{ marginTop: 34, marginBottom: 24 }}
+      style={{ marginTop: 34, marginBottom: 24}}
     >
       <div className="row">
-        <div class="col-md-1"></div>
-        <div className="col-md-9 ">
+        <div className="col-md-1"></div>
+        <div className="col-md-9" style={{position:'relative'}}>
           <h5> Η Ελενη Σουμελίδου γεννήθηκε και μεγάλωσε στην Αθήνα.</h5>
           <p>
             Σπούδασε ψυχολογία στο Αμερικάνικο Κολλέγιο Ελλάδος και απέκτησε το
@@ -44,6 +45,8 @@ const IndexPage = () => (
             Ελληνικής Εταιρείας Αναλυτικής Ομαδικής και Οικογενειακής
             Ψυχοθεραπείας.
           </p>
+          <div className="green_circle"></div>
+          {/* <img src="../images/green_circle.png" alt="circle"/> */}
         </div>
       </div>
     </div>

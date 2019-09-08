@@ -1,26 +1,47 @@
 
 
-.featured-text > h2 {
-    font-weight:600;
+.featured-text > h1 {
+    font-weight:300;
+    z-index: 9999;
+    position: relative;
 }
 
 
 .featured-text > h3{
     font-weight:100;
+    z-index: 9999;
+    position: relative;
 }
 
 .featured-container{
     height:400px;
-    /* background-image:url("../images/soumelidou_image.jpg"); */
+    /* background:linear-gradient(
+      rgba(17, 17, 17, 0.55), 
+          rgba(17, 17, 17, 0.85)
+    ), url("../../images/logo_background.jpg"); */
     background-size:cover;
-    background: url("../../images/wave.png")!important;
-    background-repeat: no-repeat;
+    /* background: url("../../images/wave.png")!important; */
+    background-repeat: no-repeat!important;
     background-position-x: 100px;
     display:'flex';
     align-items: center;
+    position: relative;
+    padding:0px
   }
   
+  .featured-container-overlay{
+
+  }
   .front_page_container p {
     font-weight:100;
     margin-top:32px;
   } 
+
+  .green_circle{
+    width:120px;
+    height:120px;
+    background-size:cover!important;
+    background:url("../../images/green_circle.png")!important; 
+    background-repeat: no-repeat!important;
+    position: absolute;
+  }
