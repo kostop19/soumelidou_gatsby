@@ -1,14 +1,35 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Image from "../components/image"
-import Hero from "../components/hero";
-const backgroundImage = require("../images/tree.jpg");
+import Image from "../components/image";
+import HeroText from "../components/heroText";
+import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
+
 const About = () => {
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <Hero title="Βιογραφικό" overlay={true} img={backgroundImage} />
+      <StaticQuery
+        query={graphql`
+          query {
+            placeholderImage: file(relativePath: { eq: "tree.jpg" }) {
+              childImageSharp {
+                fluid(maxWidth: 720, maxHeight: 200) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        `}
+        render={(data) => (
+          <div>
+            <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+            <HeroText title="Βιογραφικό" />
+          </div>
+        )}
+      />
+
       <div className="container">
         <p>Η Ελενη Σουμελίδου γεννήθηκε και μεγάλωσε στην Αθήνα.</p>
         <p>
@@ -28,14 +49,15 @@ const About = () => {
           ψυχοθεραπεία ζεύγους. Παράλληλα, εκπαιδεύτηκε στην χρήση και ερμηνεία
           του τεστ θεματικής αντίληψης ΤΑΤ και του τεστ προσωπικότητας MMPI-2.
         </p>
-        {/* <Image src={backgroundImage}/> */}
+        <Image />
         <p>
-        Είναι μέλος του Mέλος του British Psychological society (BPS) και του
-        Canterbury Consortium of Psychoanalytic and Psychodynamic
-        Psychotherapists (CCOPPP). Επίσης, είναι πρόσεδρο μέλος της Ελληνικής
-        Εταιρείας Αναλυτικής Ομαδικής και Οικογενειακής Ψυχοθεραπείας. Εργάζεται
-        ιδιωτικά από το 2010, ενώ από το 2016 είναι επιστημονική συνεργάτιδα του
-        ΟΠΑΠ στο πλαίσιο του προγράμματος «Αθλητικές ακαδημίες ΟΠΑΠ».{" "}
+          Είναι μέλος του Mέλος του British Psychological society (BPS) και του
+          Canterbury Consortium of Psychoanalytic and Psychodynamic
+          Psychotherapists (CCOPPP). Επίσης, είναι πρόσεδρο μέλος της Ελληνικής
+          Εταιρείας Αναλυτικής Ομαδικής και Οικογενειακής Ψυχοθεραπείας.
+          Εργάζεται ιδιωτικά από το 2010, ενώ από το 2016 είναι επιστημονική
+          συνεργάτιδα του ΟΠΑΠ στο πλαίσιο του προγράμματος «Αθλητικές ακαδημίες
+          ΟΠΑΠ».{" "}
         </p>
       </div>
     </Layout>
