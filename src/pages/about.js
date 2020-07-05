@@ -23,7 +23,7 @@ const About = () => {
           }
         `}
         render={(data) => (
-          <div>
+          <div style={{position:"relative"}}>
             <Img fluid={data.placeholderImage.childImageSharp.fluid} />
             <HeroText title="Βιογραφικό" />
           </div>
