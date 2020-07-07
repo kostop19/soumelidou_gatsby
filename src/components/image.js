@@ -1,6 +1,6 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image/withIEPolyfill"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,20 +13,25 @@ import Img from "gatsby-image"
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const Image = ({data}) => (
+const Image = ({ data }) => (
   <StaticQuery
     query={graphql`
       query {
         placeholderImage: file(relativePath: { eq: "books.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 720, maxHeight:200) {
+            fluid(maxWidth: 720, maxHeight: 200) {
               ...GatsbyImageSharpFluid
             }
           }
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={(data) => (
+      <Img
+        fluid={data.placeholderImage.childImageSharp.fluid}
+        objectPosition="20%"
+      />
+    )}
   />
-)
-export default Image
+);
+export default Image;

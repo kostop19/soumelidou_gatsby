@@ -2,18 +2,40 @@ import React from "react";
 import ContactForm from "../components/contactForm/contactForm";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import FeaturedArea from "../components/featuredArea/index";
-const backgroundImage = require("../images/contact_bg.png");
+import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image/withIEPolyfill";
+import HeroText from "../components/heroText";
+
 const Contact = () => {
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <FeaturedArea title="Επικοινωνία" overlay={true} img={backgroundImage} />
-      <div class="container" style={{marginTop:54, marginBottom:54}}>
+      <StaticQuery
+        query={graphql`
+          query {
+            placeholderImage: file(relativePath: { eq: "contact.jpg" }) {
+              childImageSharp {
+                fluid(quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        `}
+        render={(data) => (
+          <div style={{ position: "relative" }}>
+            <Img
+              fluid={data.placeholderImage.childImageSharp.fluid}
+              style={{height: "400px"}} 
+            />
+            <HeroText title="Επικοινωνία" styles={{textAlign: "center"}}/>
+          </div>
+        )}
+      />
+      <div class="container" style={{ marginTop: 54, marginBottom: 54 }}>
         <p style={{ margin: "1em 0" }}>
-          Accumsan pellentesque commodo blandit enim arcu non at amet id arcu
-          magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-          vulputate lorem neque lorem ipsum dolor.
+          Επικοινωνήστε μέσω email, τηλεφώνου, ή στείλτε ένα μήνυμα μέσω της
+          online φόρμας.
         </p>
         <div className="contact-info">
           <div className="contact-info-item">

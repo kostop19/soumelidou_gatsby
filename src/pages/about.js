@@ -15,7 +15,7 @@ const About = () => {
           query {
             placeholderImage: file(relativePath: { eq: "tree.jpg" }) {
               childImageSharp {
-                fluid(maxWidth: 720, maxHeight: 200) {
+                fluid(quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -23,14 +23,17 @@ const About = () => {
           }
         `}
         render={(data) => (
-          <div style={{position:"relative"}}>
-            <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-            <HeroText title="Βιογραφικό" />
+          <div style={{ position: "relative" }}>
+            <Img
+              fluid={data.placeholderImage.childImageSharp.fluid}
+              style={{ height: "400px" }}
+            />
+            <HeroText title="Βιογραφικό" styles={{textAlign: "center"}} />
           </div>
         )}
       />
 
-      <div className="container">
+      <div className="container main-content" style={{ marginTop: "32px" }}>
         <p>Η Ελενη Σουμελίδου γεννήθηκε και μεγάλωσε στην Αθήνα.</p>
         <p>
           Σπούδασε ψυχολογία στο Αμερικάνικο Κολλέγιο Ελλάδος και απέκτησε το
@@ -40,7 +43,7 @@ const About = () => {
           εθελοντικά στο νοσοκομείο St.Martins με ασθενείς σε ατομικό αλλά και
           ομαδικό πλαίσιο.{" "}
         </p>
-        <p>
+        <p style={{ marginBottom: "24px" }}>
           Στη συνέχεια, εκπαιδεύτηκε για 5 χρόνια στην Ελληνική Εταιρεία
           Αναλυτικής Ομαδικής και Οικογενειακής Ψυχοθεραπείας, στην ομαδική
           ψυχοθεραπέια, στην οικογενειακή ψυχοθεραπεία και στην ψυχοθεραπεία
@@ -50,7 +53,7 @@ const About = () => {
           του τεστ θεματικής αντίληψης ΤΑΤ και του τεστ προσωπικότητας MMPI-2.
         </p>
         <Image />
-        <p>
+        <p style={{ marginTop: "24px" }}>
           Είναι μέλος του Mέλος του British Psychological society (BPS) και του
           Canterbury Consortium of Psychoanalytic and Psychodynamic
           Psychotherapists (CCOPPP). Επίσης, είναι πρόσεδρο μέλος της Ελληνικής

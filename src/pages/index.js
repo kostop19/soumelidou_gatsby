@@ -14,7 +14,7 @@ const IndexPage = () => (
         query {
           placeholderImage: file(relativePath: { eq: "street.jpg" }) {
             childImageSharp {
-              fluid(maxWidth: 1000) {
+              fluid(quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -22,12 +22,13 @@ const IndexPage = () => (
         }
       `}
       render={(data) => (
-        <div style={{position:'relative'}}>
+        <div style={{ position: "relative" }}>
           <Img
             fluid={data.placeholderImage.childImageSharp.fluid}
             style={{ height: "100vh" }}
           />
           <HeroText
+          underline={true}
             title="ΕΛΕΝΗ ΣΟΥΜΕΛΙΔΟΥ"
             subtitle="Ψυχολόγος MSc, Ψυχοδυναμική Ψυχοθεραπεύτρια - Αναλύτρια Ομάδας,
          Ζεύγους & Οικογένειας"

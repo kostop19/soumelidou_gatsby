@@ -49,19 +49,8 @@ a {
   }
 }
 
-.top-nav {
-  background-color: transparent;
-  color: #000;
-  padding: 1em;
-  position: absolute;
-  top: 0px;
-  z-index: 1000;
-  width: 100%;
-}
 
-.nav-item {
-  color: #fff!important;
-}
+
 
 .menu {
   display: flex;
