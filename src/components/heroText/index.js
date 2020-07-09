@@ -5,18 +5,22 @@ const HeroText = ({ title, subtitle, styles, underline }) => (
     <h1 style={{ color: "white", fontWeight: "600", zIndex: "100" }}>
       {title}
     </h1>
-    {underline &&  <div
-      style={{
-        width: 50,
-        height: 4,
-        backgroundColor: "white",
-        margin: "10px 0",
-        position: "relative",
-        zIndex: "100",
-      }}
-    ></div>}
-   
-    <h3 style={{ color: "white", fontWeight: 300 }}>{subtitle && subtitle}</h3>
+    {underline && (
+      <div style={{display:'flex', justifyContent: 'center'}}>
+        <div
+          style={{
+            width: 50,
+            height: 2,
+            backgroundColor: "white",
+            margin: "5px 5px",
+            position: "relative",
+            zIndex: "100",
+          }}
+        ></div>
+      </div>
+    )}
+
+    <h3 style={{ color: "white", fontWeight: 100,lineHeight: "2.5rem" }}>{subtitle && subtitle}</h3>
   </div>
 );
 

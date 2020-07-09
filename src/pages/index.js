@@ -5,6 +5,7 @@ import HeroText from "../components/heroText";
 
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
+import Quotes from "../components/quotes";
 
 const IndexPage = () => (
   <Layout>
@@ -28,9 +29,10 @@ const IndexPage = () => (
             style={{ height: "100vh" }}
           />
           <HeroText
-          underline={true}
-            title="ΕΛΕΝΗ ΣΟΥΜΕΛΙΔΟΥ"
-            subtitle="Ψυχολόγος MSc, Ψυχοδυναμική Ψυχοθεραπεύτρια - Αναλύτρια Ομάδας,
+          styles={{textAlign: 'center', width:"50%"}}
+          underline
+            title="Ελένη Σουμελίδου"
+            subtitle="Ψυχολόγος MSc, Ψυχοδυναμική Ψυχοθεραπεύτρια Αναλύτρια Ομάδας,
          Ζεύγους & Οικογένειας"
           />
         </div>
@@ -38,13 +40,9 @@ const IndexPage = () => (
     />
 
     <div
-      className="container front_page_container"
-      style={{ marginTop: 120, marginBottom: 120 }}
+      className="container-fluid"
     >
-      <blockquote className="blockquote ">
-        <div className="blockquote-custom-icon bg-info shadow-sm"></div>
-        <p className="mb-0 mt-2 font-italic">"Άντρες Πεταμένα Λεφτά ..."</p>
-      </blockquote>
+      <Quotes/>
     </div>
   </Layout>
 );

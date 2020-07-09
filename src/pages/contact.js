@@ -32,7 +32,7 @@ const Contact = () => {
           </div>
         )}
       />
-      <div class="container" style={{ marginTop: 54, marginBottom: 54 }}>
+      <div class="container main-content" style={{ marginTop: "-52px", zIndex:"100", position: "relative" }}>
         <p style={{ margin: "1em 0" }}>
           Επικοινωνήστε μέσω email, τηλεφώνου, ή στείλτε ένα μήνυμα μέσω της
           online φόρμας.

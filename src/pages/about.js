@@ -33,7 +33,7 @@ const About = () => {
         )}
       />
 
-      <div className="container main-content" style={{ marginTop: "32px" }}>
+      <div className="container main-content" style={{ marginTop: "-52px", zIndex:"100", position: "relative"  }}>
         <p>Η Ελενη Σουμελίδου γεννήθηκε και μεγάλωσε στην Αθήνα.</p>
         <p>
           Σπούδασε ψυχολογία στο Αμερικάνικο Κολλέγιο Ελλάδος και απέκτησε το

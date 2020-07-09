@@ -15,13 +15,14 @@ body {
 }
 
 .main-content{
-  background:#ffff;
-  padding: 1.5em;
-  border-radius:6px;
+  background: #ffffff!important;
+  padding: 2em !important; 
+  border-radius:4px;
 }
 
 p{
-  font-size: 18px;
+  font-size: 16px;
+  font-family: 'Roboto Mono', sans-serif;
 }
 
 input[type=email], input[type=password], input[type=text], select, input[type=textarea], textarea {
