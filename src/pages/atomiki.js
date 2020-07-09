@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Image from "../components/image";
+
 import HeroText from "../components/heroText";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
@@ -28,13 +28,25 @@ const About = () => {
               fluid={data.placeholderImage.childImageSharp.fluid}
               style={{ height: "400px" }}
             />
-            <HeroText title="Ατομική Ψυχοθεραπεία" styles={{ textAlign: "center" }} />
+            <HeroText
+              title="Ατομική Ψυχοθεραπεία"
+              styles={{ textAlign: "center" }}
+            />
+            <div
+              style={{
+                height: "100%",
+                width: "100%",
+                background: "rgba(0,0,0,0.3)",
+                position: "absolute",
+                top:"0px"
+              }}
+            ></div>
           </div>
         )}
       />
 
       <div className="container main-content" style={{ marginTop: "32px" }}>
-        <h3 style={{marginBottom:'12px'}}>Ατομική Ψυχοθεραπεία</h3>
+        <h3 style={{ marginBottom: "12px" }}>Ατομική Ψυχοθεραπεία</h3>
         <p>
           Η ψυχοθεραπεία, που ασκείται πάνω από εκατό χρόνια τώρα, είναι μία
           επιστημονική θεραπευτική μέθοδος η οποία συνεχώς μελετάται και
