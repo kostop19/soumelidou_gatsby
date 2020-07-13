@@ -34,7 +34,7 @@ const Footer = () => (
       <div className="container">
         <p className="pull-left copyright">
           {" "}
-          Copyright © Footer 2020. All right reserved.{" "}
+          Copyright © 2020. All right reserved.{" "}
         </p>
       </div>
     </div>
