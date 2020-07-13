@@ -17,7 +17,7 @@ const IndexPage = () => (
           placeholderImage: file(relativePath: { eq: "street.jpg" }) {
             childImageSharp {
               fluid(quality: 100) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }

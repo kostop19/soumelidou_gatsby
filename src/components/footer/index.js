@@ -13,7 +13,7 @@ const Footer = () => (
               placeholderImage: file(relativePath: { eq: "logo.jpg" }) {
                 childImageSharp {
                   fluid(quality: 100) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                   }
                 }
               }
