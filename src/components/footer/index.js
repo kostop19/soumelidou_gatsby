@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image/withIEPolyfill";
 
 const Footer = () => (
-  <footer className="pt-4 my-md-5 pt-md-5 border-top">
+  <footer className="border-top" >
     <div className="row">
       <div className="col-12 col-md">
         <small className="d-block mb-3 text-muted">&copy; 2017-2018</small>

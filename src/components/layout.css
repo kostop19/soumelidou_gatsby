@@ -17,6 +17,7 @@ body {
 .main-content{
   background: #ffffff!important;
   padding: 2em !important; 
+  margin-bottom: 32px;
   border-radius:4px;
 }
 
@@ -84,4 +85,31 @@ footer{
   padding-left: 0px!important;
   padding-right: 0px!important;
   margin-top: 24px;
+}
+
+.arrows {
+  width: 38px;
+  height: 38px;
+  border-color: #656565;
+  position: absolute;
+  top: 50%;
+  margin-top: -31px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.prev {
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 50px;
+}
+
+.next {
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  right: 50px;
 }

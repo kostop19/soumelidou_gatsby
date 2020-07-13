@@ -5,24 +5,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
-  );
+  return <div className="arrows next" onClick={onClick} />;
 }
 
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "green" }}
-      onClick={onClick}
-    />
-  );
+  return <div className="arrows prev" onClick={onClick} />;
 }
 class Carousel extends Component {
   render() {
@@ -30,12 +18,12 @@ class Carousel extends Component {
       dots: false,
       autoplay: true,
       infinite: true,
-      speed: 500,
-      autoplaySpeed: 4000,
+      speed: 1000,
+      autoplaySpeed: 3000,
       slidesToShow: 1,
       slidesToScroll: 1,
-      // nextArrow: <SampleNextArrow />,
-      // prevArrow: <SamplePrevArrow />,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
     };
     return (
       <div>
