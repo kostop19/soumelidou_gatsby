@@ -6,6 +6,7 @@ import HeroText from "../components/heroText";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import Quotes from "../components/quotes";
+import Carousel from "../components/slider";
 
 const IndexPage = () => (
   <Layout>
@@ -29,8 +30,8 @@ const IndexPage = () => (
             style={{ height: "100vh" }}
           />
           <HeroText
-          styles={{textAlign: 'center', width:"50%"}}
-          underline
+            styles={{ textAlign: "center", width: "50%" }}
+            underline
             title="Ελένη Σουμελίδου"
             subtitle="Ψυχολόγος MSc, Ψυχοδυναμική Ψυχοθεραπεύτρια Αναλύτρια Ομάδας,
          Ζεύγους & Οικογένειας"
@@ -39,10 +40,21 @@ const IndexPage = () => (
       )}
     />
 
-    <div
-      className="container-fluid"
-    >
-      <Quotes/>
+    <div className="container-fluid">
+      <Carousel>
+        <div>
+          <Quotes
+            text="Η αγάπη είναι η μόνη υγιής και ικανοποιητική απάντηση στο πρόβλημα της ανθρώπινης ύπαρξης."
+            author="Erich Fromm, 1900 - 1980"
+          />
+        </div>
+        <div>
+          <Quotes
+            text="Ο μόνος άνθρωπος που είναι πραγματικά μορφωμένος είναι εκείνος που έχει μάθει πως να μαθαίνει και πως να αλλάζει"
+            author="Carl Rogers"
+          />
+        </div>
+      </Carousel>
     </div>
   </Layout>
 );

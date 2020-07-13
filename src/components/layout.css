@@ -79,3 +79,9 @@ footer{
   padding: 24px;
   border-top: 1px solid #ededed;
 }
+
+.map-container{
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+  margin-top: 24px;
+}
