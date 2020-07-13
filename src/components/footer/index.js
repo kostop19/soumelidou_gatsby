@@ -32,7 +32,7 @@ const Footer = () => (
 
     <div className="footer-bottom">
       <div className="container">
-        <p className="pull-left copyright">
+        <p className="pull-left copyright" style={{marginBottom: '0.5rem'}}>
           {" "}
           Copyright © 2020. All right reserved.{" "}
         </p>
