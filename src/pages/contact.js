@@ -58,13 +58,14 @@ const Contact = () => {
       </div>
       <div className="container-fluid map-container">
         <iframe
+        title="Map"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6291.197068050256!2d23.723728!3d37.963159!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd04e8f0be8f%3A0x9a0678e2a7a7f08e!2sOdissea%20Androutsou%2029%2C%20Athina%20117%2041!5e0!3m2!1sen!2sgr!4v1594667026905!5m2!1sen!2sgr"
           width="100%"
           height="420"
           frameborder="0"
           allowfullscreen=""
           aria-hidden="false"
-          tabindex="0"
+         
         ></iframe>
       </div>
     </Layout>
