@@ -9,7 +9,7 @@ import Img from "gatsby-image";
 const About = () => {
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title="Βιογραφικό" keywords={[`gatsby`, `application`, `react`]} />
       <StaticQuery
         query={graphql`
           query {

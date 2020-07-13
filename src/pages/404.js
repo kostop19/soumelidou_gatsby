@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="404" keywords={[`gatsby`, `application`, `react`]} />
     <h1>You are in a wrong page</h1>
   
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>

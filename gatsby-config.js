@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
       title: `Ελένη Σουμελίδου`,
-      description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+      description: `Ψυχολόγος MSc, Ψυχοδυναμική Ψυχοθεραπεύτρια Αναλύτρια Ομάδας, Ζεύγους & Οικογένειας`,
       author: `@gatsbyjs`,
       image: `/logo_background.jpg`
     },

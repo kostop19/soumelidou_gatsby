@@ -10,7 +10,7 @@ import Carousel from "../components/slider";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Αρχική | Ελένη Σουμελίδου" keywords={[`gatsby`, `application`, `react`]} />
     <StaticQuery
       query={graphql`
         query {
