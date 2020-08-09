@@ -6,14 +6,14 @@ import HeroText from "../components/heroText";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-const About = () => {
+const Index = () => {
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <StaticQuery
         query={graphql`
           query {
-            placeholderImage: file(relativePath: { eq: "atomiki.jpeg" }) {
+            placeholderImage: file(relativePath: { eq: "atomiki.jpg" }) {
               childImageSharp {
                 fluid(quality: 100) {
                   ...GatsbyImageSharpFluid
@@ -116,7 +116,7 @@ const About = () => {
           σχέσεων επαναλαμβάνεται στην επιλογή συντρόφου.{" "}
         </p>
         <p>
-          Η ψυχοθεραπεία που λαμβάνει χώρα σε ένα συγκεκριμένο πλαίσιο, τα
+          Η ψυχοθεραπεία που λαμβάνει χώρα σε ένα συγκεκριμένο πλαίσιο, τo
           γραφείο του θεραπευτή και έχει διάρκεια 45 με 50 λεπτά, αποτελείται
           από τακτικές συνεδρίες, συνήθως μια φορά την εβδομάδα. Σε άλλες
           περιπτώσεις, κάποιες συνεδρίες πραγματοποιούνται και δυο φορές την
@@ -135,4 +135,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Index;

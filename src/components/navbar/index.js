@@ -27,18 +27,18 @@ const NavBar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/omadiki">
                 Ομαδική ψυχοθεραπεία
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
-                Οικογενειακή
+              <Link className="nav-link" to="/oikogeneiaki">
+                Οικογενειακή ψυχοθεραπεία
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
-                ζεύγους
+              <Link className="nav-link" to="/zeugous">
+                Ψυχοθεραπεία ζεύγους
               </Link>
             </li>
           </ul>

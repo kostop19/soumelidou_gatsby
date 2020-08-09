@@ -28,12 +28,15 @@ const About = () => {
               fluid={data.placeholderImage.childImageSharp.fluid}
               style={{ height: "400px" }}
             />
-            <HeroText title="Βιογραφικό" styles={{textAlign: "center"}} />
+            <HeroText title="Βιογραφικό" styles={{ textAlign: "center" }} />
           </div>
         )}
       />
 
-      <div className="container main-content" style={{ marginTop: "-52px", zIndex:"100", position: "relative"  }}>
+      <div
+        className="container main-content"
+        style={{ marginTop: "-52px", zIndex: "100", position: "relative" }}
+      >
         <p>Η Ελενη Σουμελίδου γεννήθηκε και μεγάλωσε στην Αθήνα.</p>
         <p>
           Σπούδασε ψυχολογία στο Αμερικάνικο Κολλέγιο Ελλάδος και απέκτησε το
@@ -58,6 +61,8 @@ const About = () => {
           Canterbury Consortium of Psychoanalytic and Psychodynamic
           Psychotherapists (CCOPPP). Επίσης, είναι πρόσεδρο μέλος της Ελληνικής
           Εταιρείας Αναλυτικής Ομαδικής και Οικογενειακής Ψυχοθεραπείας.
+        </p>
+        <p>
           Εργάζεται ιδιωτικά από το 2010, ενώ από το 2016 είναι επιστημονική
           συνεργάτιδα του ΟΠΑΠ στο πλαίσιο του προγράμματος «Αθλητικές ακαδημίες
           ΟΠΑΠ».{" "}

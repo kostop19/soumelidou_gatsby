@@ -7,7 +7,8 @@ const Footer = () => (
       <div className="container">
         <div className="row">
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h4> Eleni Soumelidou </h4>
+            <h4>  </h4>
+            {/* <h4> Eleni Soumelidou </h4> */}
             <ul>
               <li>
                 <a className="email" href="mailto: esoumel@gmail.com ">
