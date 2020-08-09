@@ -7,16 +7,17 @@
     height: 180px;
 }
 .contact-info-item{
-    display:flex;
+  
     font-size:15px;
     color:#4a4949;
     line-height: 1.2;
     align-items:center;
-    margin-bottom:12px;
+    margin-bottom:14px;
+    
 }
 
 .contact-info-icons{
     margin-right:14px;
-    font-size:24px;
+    font-size:20px;
     color:#b2b2b2;
 }

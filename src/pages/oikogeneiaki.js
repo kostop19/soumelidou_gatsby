@@ -4,9 +4,9 @@ import SEO from "../components/seo";
 
 import HeroText from "../components/heroText";
 import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import BackgroundImage from "gatsby-background-image";
 
-const Index = () => {
+const Index = ({ className }) => {
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -15,7 +15,7 @@ const Index = () => {
           query {
             placeholderImage: file(relativePath: { eq: "oikogeneiaki.jpg" }) {
               childImageSharp {
-                fluid(quality: 100) {
+                fluid(quality: 100, maxHeight: 250, maxWidth: 1000) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -24,12 +24,14 @@ const Index = () => {
         `}
         render={(data) => (
           <div style={{ position: "relative" }}>
-            <Img
+            
+              <BackgroundImage
+              Tag="section"
+              className={className}
+              style={{ height: "400px", backgroundSize: "cover", backgroundPosition: "50% 0%"}}
               fluid={data.placeholderImage.childImageSharp.fluid}
-              style={{ height: "400px" }}
-              objectFit="cover"
-              objectPosition="50% 50%"
-            />
+              backgroundColor={`#040e18`}
+            ></BackgroundImage>
             <HeroText
               title="Οικογενειακή ψυχοθεραπεία"
               styles={{ textAlign: "center" }}
@@ -49,9 +51,9 @@ const Index = () => {
 
       <div
         className="container main-content"
-        style={{ marginTop: "-52px", zIndex: "100", position: "relative" }}
+        style={{ marginTop: "-52px", zIndex: "100", position: "relative", display: "flex", alignItems:"center", justifyContent:"center", height: "400px" }}
       >
-       
+       <h2 style={{textAlign:"center", color: "grey"}}>To τμήμα αυτό είναι υπο κατασκευή</h2>
       </div>
     </Layout>
   );

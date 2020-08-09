@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 import HeroText from "../components/heroText";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
-
+import BackgroundImage from "gatsby-background-image";
 const Index = () => {
   return (
     <Layout>
@@ -24,10 +24,16 @@ const Index = () => {
         `}
         render={(data) => (
           <div style={{ position: "relative" }}>
-            <Img
+            {/* <Img
               fluid={data.placeholderImage.childImageSharp.fluid}
               style={{ height: "400px" }}
-            />
+            /> */}
+               <BackgroundImage
+              Tag="section"
+              style={{ height: "400px", backgroundSize: "cover", backgroundPosition: "80% 20%" }}
+              fluid={data.placeholderImage.childImageSharp.fluid}
+              backgroundColor={`#040e18`}
+            ></BackgroundImage>
             <HeroText
               title="Ψυχοθεραπεία Ζεύγους"
               styles={{ textAlign: "center" }}

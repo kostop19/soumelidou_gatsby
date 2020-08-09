@@ -6,6 +6,7 @@ import HeroText from "../components/heroText";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
+
 const Index = () => {
   return (
     <Layout>
@@ -15,7 +16,7 @@ const Index = () => {
           query {
             placeholderImage: file(relativePath: { eq: "atomiki.jpg" }) {
               childImageSharp {
-                fluid(quality: 100) {
+                fluid(quality: 100, maxHeight: 1200, maxWidth: 1800) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -28,6 +29,7 @@ const Index = () => {
               fluid={data.placeholderImage.childImageSharp.fluid}
               style={{ height: "400px" }}
             />
+            
             <HeroText
               title="Ατομική Ψυχοθεραπεία"
               styles={{ textAlign: "center" }}
