@@ -10,13 +10,13 @@ import Img from "gatsby-image";
 const Index = () => {
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title="Ατομική Ψυχοθεραπεία" keywords={[`ψυχοθεραπεία`, `ατομική`, `ατομική ψυχοθεραπεία`]} />
       <StaticQuery
         query={graphql`
           query {
             placeholderImage: file(relativePath: { eq: "atomiki.jpg" }) {
               childImageSharp {
-                fluid(quality: 100, maxHeight: 1200, maxWidth: 1800) {
+                fluid(quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -27,7 +27,8 @@ const Index = () => {
           <div style={{ position: "relative" }}>
             <Img
               fluid={data.placeholderImage.childImageSharp.fluid}
-              style={{ height: "400px" }}
+              // style={{ height: "400px" }}
+              style={{ height: "100vh" }}
             />
             
             <HeroText
@@ -49,7 +50,7 @@ const Index = () => {
 
       <div
         className="container main-content"
-        style={{ marginTop: "-52px", zIndex: "100", position: "relative" }}
+        style={{ marginTop: "52px", zIndex: "100", position: "relative" }}
       >
         <p>
           Η ψυχοθεραπεία, που ασκείται πάνω από εκατό χρόνια τώρα, είναι μία
@@ -64,7 +65,7 @@ const Index = () => {
           προσωποκεντρική, η συστημική, η γνωστική/συμπεριφορική κ.α.
         </p>
         <div className="row">
-          <div className="col-md-8">
+          <div className="col-md-7">
             <p>
               Πιο συγκεκριμένα, η ψυχοθεραπεία είναι μια θεραπευτική μέθοδος που
               βασίζεται ιδιαίτερα στη σχέση που αναπτύσσεται μεταξύ θεραπευτή
@@ -91,7 +92,7 @@ const Index = () => {
               αδιέξοδου στη ζωή, σε διάφορες φοβίες.
             </p>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 offset-1">
             <section className="testimonial">
               <div className="inner">
                 <div className="cederholm" id="quote-wrapper">

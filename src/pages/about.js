@@ -26,7 +26,8 @@ const About = () => {
           <div style={{ position: "relative" }}>
             <Img
               fluid={data.placeholderImage.childImageSharp.fluid}
-              style={{ height: "400px" }}
+              // style={{ height: "400px" }}
+              style={{ height: "100vh" }}
             />
             <HeroText title="Βιογραφικό" styles={{ textAlign: "center" }} />
           </div>
@@ -35,7 +36,7 @@ const About = () => {
 
       <div
         className="container main-content"
-        style={{ marginTop: "-52px", zIndex: "100", position: "relative" }}
+        style={{ marginTop: "52px", zIndex: "100", position: "relative" }}
       >
         <p>Η Ελενη Σουμελίδου γεννήθηκε και μεγάλωσε στην Αθήνα.</p>
         <p>

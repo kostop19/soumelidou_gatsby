@@ -32,11 +32,8 @@ const Contact = () => {
           </div>
         )}
       />
-      <div style={{backgroundColor: "white"}}>
-        <div
-          class="container main-content"
-          style={{  maxWidth: "1440px" }}
-        >
+      <div style={{ backgroundColor: "white" }}>
+        <div class="container main-content" style={{ maxWidth: "1440px" }}>
           <div className="row">
             <div className="col-md-6">
               <div className="contact-info">
@@ -44,40 +41,6 @@ const Contact = () => {
                   Επικοινωνήστε μέσω email, τηλεφώνου, ή στείλτε ένα μήνυμα μέσω
                   της online φόρμας.
                 </h5>
-                <div className="contact-info-item">
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      marginBottom: "12px",
-                    }}
-                  >
-                    <div className="material-icons contact-info-icons">
-                      home
-                    </div>
-                    <div style={{fontSize: "16px"}}>Διεύθυνση </div>
-                  </div>
-                  <p>
-                    Οδυσσέως Ανδρούτσου 29, Κουκάκι 117 41 - Δίπλα στο σταθμό
-                    Φιξ του μετρό
-                  </p>
-                </div>
-
-                <div className="contact-info-item">
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      marginBottom: "12px",
-                    }}
-                  >
-                    <div className="material-icons contact-info-icons">
-                      perm_phone_msg
-                    </div>
-                    <div style={{fontSize: "16px"}}>Τηλέφωνο</div>
-                  </div>
-                  <div>211 41 47 917 - 6942839391</div>
-                </div>
 
                 <div className="contact-info-item">
                   <div
@@ -90,9 +53,43 @@ const Contact = () => {
                     <div className="material-icons contact-info-icons">
                       email
                     </div>
-                    <div style={{fontSize: "16px"}}> Email</div>
+                    <div style={{ fontSize: "16px" }}> Email</div>
                   </div>
                   esoumel@gmail.com
+                </div>
+                <div className="contact-info-item">
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginBottom: "12px",
+                    }}
+                  >
+                    <div className="material-icons contact-info-icons">
+                      perm_phone_msg
+                    </div>
+                    <div style={{ fontSize: "16px" }}>Τηλέφωνο</div>
+                  </div>
+                  <div className="mb-2"> T: 211 41 47 917 </div>
+                  <div>M: 6942 83 93 91</div>
+                </div>
+                <div className="contact-info-item">
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      marginBottom: "12px",
+                    }}
+                  >
+                    <div className="material-icons contact-info-icons">
+                      home
+                    </div>
+                    <div style={{ fontSize: "16px" }}>Διεύθυνση </div>
+                  </div>
+                  <p>
+                    Οδυσσέως Ανδρούτσου 29, Κουκάκι 117 41 - Δίπλα στο σταθμό
+                    Φιξ του μετρό
+                  </p>
                 </div>
               </div>
             </div>

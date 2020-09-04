@@ -15,7 +15,7 @@ const Index = ({ className }) => {
           query {
             placeholderImage: file(relativePath: { eq: "oikogeneiaki.jpg" }) {
               childImageSharp {
-                fluid(quality: 100, maxHeight: 250, maxWidth: 1000) {
+                fluid(quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -28,7 +28,7 @@ const Index = ({ className }) => {
               <BackgroundImage
               Tag="section"
               className={className}
-              style={{ height: "400px", backgroundSize: "cover", backgroundPosition: "50% 0%"}}
+              style={{ height: "100vh", backgroundSize: "cover", backgroundPosition: "50% 0%"}}
               fluid={data.placeholderImage.childImageSharp.fluid}
               backgroundColor={`#040e18`}
             ></BackgroundImage>
@@ -51,7 +51,7 @@ const Index = ({ className }) => {
 
       <div
         className="container main-content"
-        style={{ marginTop: "-52px", zIndex: "100", position: "relative", display: "flex", alignItems:"center", justifyContent:"center", height: "400px" }}
+        style={{ marginTop: "52px", zIndex: "100", position: "relative", display: "flex", alignItems:"center", justifyContent:"center", height: "400px" }}
       >
        <h2 style={{textAlign:"center", color: "grey"}}>To τμήμα αυτό είναι υπο κατασκευή</h2>
       </div>

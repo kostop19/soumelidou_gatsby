@@ -9,7 +9,7 @@ import BackgroundImage from "gatsby-background-image";
 const Index = () => {
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title="Ψυχοθεραπεία Ζεύγους" keywords={[`ψυχοθεραπεία`, `ψυχοθεραπεία ζεύγους`, `ζεύγους`]} />
       <StaticQuery
         query={graphql`
           query {
@@ -30,7 +30,7 @@ const Index = () => {
             /> */}
                <BackgroundImage
               Tag="section"
-              style={{ height: "400px", backgroundSize: "cover", backgroundPosition: "80% 20%" }}
+              style={{ height: "100vh", backgroundSize: "cover", backgroundPosition: "80% 20%" }}
               fluid={data.placeholderImage.childImageSharp.fluid}
               backgroundColor={`#040e18`}
             ></BackgroundImage>
@@ -53,7 +53,7 @@ const Index = () => {
 
       <div
         className="container main-content"
-        style={{ marginTop: "-52px", zIndex: "100", position: "relative" }}
+        style={{ marginTop: "52px", zIndex: "100", position: "relative" }}
       >
         <p>
           Ο άνθρωπος έχει ανάγκη να σχετίζεται. Για την ακρίβεια, σχετίζεται από
