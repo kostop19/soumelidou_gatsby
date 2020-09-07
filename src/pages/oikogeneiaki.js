@@ -24,11 +24,14 @@ const Index = ({ className }) => {
         `}
         render={(data) => (
           <div style={{ position: "relative" }}>
-            
-              <BackgroundImage
+            <BackgroundImage
               Tag="section"
               className={className}
-              style={{ height: "100vh", backgroundSize: "cover", backgroundPosition: "50% 0%"}}
+              style={{
+                height: "100vh",
+                backgroundSize: "cover",
+                backgroundPosition: "50% 25%",
+              }}
               fluid={data.placeholderImage.childImageSharp.fluid}
               backgroundColor={`#040e18`}
             ></BackgroundImage>
@@ -51,9 +54,19 @@ const Index = ({ className }) => {
 
       <div
         className="container main-content"
-        style={{ marginTop: "52px", zIndex: "100", position: "relative", display: "flex", alignItems:"center", justifyContent:"center", height: "400px" }}
+        style={{
+          marginTop: "52px",
+          zIndex: "100",
+          position: "relative",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "400px",
+        }}
       >
-       <h2 style={{textAlign:"center", color: "grey"}}>To τμήμα αυτό είναι υπο κατασκευή</h2>
+        <h2 style={{ textAlign: "center", color: "grey" }}>
+          To τμήμα αυτό είναι υπο κατασκευή
+        </h2>
       </div>
     </Layout>
   );

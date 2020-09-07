@@ -26,7 +26,7 @@ const Contact = () => {
           <div style={{ position: "relative" }}>
             <Img
               fluid={data.placeholderImage.childImageSharp.fluid}
-              style={{ height: "400px" }}
+              style={{ height: "100vh" }}
             />
             <HeroText title="Επικοινωνία" styles={{ textAlign: "center" }} />
           </div>
