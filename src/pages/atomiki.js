@@ -101,7 +101,7 @@ const Index = () => {
                       Η αγάπη είναι η μόνη υγιής και ικανοποιητική απάντηση στο
                       πρόβλημα της ανθρώπινης ύπαρξης.
                     </blockquote>
-                    <cite id="quote-attrib">Erich Fromm</cite>
+                    <cite id="quote-attrib" style={{fontWeight: "300", fontSize: 24}}>Erich Fromm</cite>
                   </div>
                   <div className="portrait"></div>
                 </div>

@@ -56,7 +56,7 @@ const About = () => {
           του τεστ θεματικής αντίληψης ΤΑΤ και του τεστ προσωπικότητας MMPI-2.
         </p>
         <p style={{ marginTop: "24px" }}>
-          Είναι μέλος Mέλος του British Psychological society (BPS) και του
+          Είναι Mέλος του British Psychological society (BPS) και του
           Canterbury Consortium of Psychoanalytic and Psychodynamic
           Psychotherapists (CCOPPP). Επίσης, είναι πρόσεδρο μέλος της Ελληνικής
           Εταιρείας Αναλυτικής Ομαδικής και Οικογενειακής Ψυχοθεραπείας.
