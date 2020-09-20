@@ -12,7 +12,7 @@ const About = () => {
       <StaticQuery
         query={graphql`
           query {
-            placeholderImage: file(relativePath: { eq: "books.png" }) {
+            placeholderImage: file(relativePath: { eq: "book2.jpg" }) {
               childImageSharp {
                 fluid(quality: 100) {
                   ...GatsbyImageSharpFluid
@@ -56,7 +56,7 @@ const About = () => {
           του τεστ θεματικής αντίληψης ΤΑΤ και του τεστ προσωπικότητας MMPI-2.
         </p>
         <p style={{ marginTop: "24px" }}>
-          Είναι Mέλος του British Psychological society (BPS) και του
+          Είναι μέλος του British Psychological society (BPS) και του
           Canterbury Consortium of Psychoanalytic and Psychodynamic
           Psychotherapists (CCOPPP). Επίσης, είναι πρόσεδρο μέλος της Ελληνικής
           Εταιρείας Αναλυτικής Ομαδικής και Οικογενειακής Ψυχοθεραπείας.

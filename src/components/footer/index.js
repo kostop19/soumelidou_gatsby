@@ -8,7 +8,7 @@ const Footer = () => (
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ display: "flex"}}>
               <div className="material-icons contact-info-icons">home</div>
               <p> Οδυσσέως Ανδρούτσου 29, Κουκάκι</p>
             </div>
@@ -25,13 +25,12 @@ const Footer = () => (
               <a className="email" href="mailto: esoumel@gmail.com ">
                 esoumel@gmail.com
               </a>
-            </div>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              <div className="material-icons contact-info-icons">
+              <div className="material-icons contact-info-icons" style={{marginLeft: "12px"}}>
                 perm_phone_msg
               </div>
               <p>Τηλ. 6942 83 93 91</p>
             </div>
+           
           </div>
         </div>
       </div>
