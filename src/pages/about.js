@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Image from "../components/image";
 import HeroText from "../components/heroText";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
@@ -13,7 +12,7 @@ const About = () => {
       <StaticQuery
         query={graphql`
           query {
-            placeholderImage: file(relativePath: { eq: "tree.jpg" }) {
+            placeholderImage: file(relativePath: { eq: "books.png" }) {
               childImageSharp {
                 fluid(quality: 100) {
                   ...GatsbyImageSharpFluid
@@ -38,12 +37,12 @@ const About = () => {
         className="container main-content"
         style={{ marginTop: "52px", zIndex: "100", position: "relative" }}
       >
-        <p>Η Ελενη Σουμελίδου γεννήθηκε και μεγάλωσε στην Αθήνα.</p>
+        <p>Η Ελένη Σουμελίδου γεννήθηκε και μεγάλωσε στην Αθήνα.</p>
         <p>
           Σπούδασε ψυχολογία στο Αμερικάνικο Κολλέγιο Ελλάδος και απέκτησε το
           μεταπτυχιακό της από το Πανεπιστήμιο του KENT στην Αγγλία με
           αντικείμενο τη ψυχοθεραπεία. Εκεί, μελέτησε όλα τα μοντέλα
-          ψυχοθεραπείας με κυρίως έμφαση στο ψυχαναλυτικο μοντέλο, ενώ, δούλεψε
+          ψυχοθεραπείας με κυρίως έμφαση στο ψυχαναλυτικό μοντέλο, ενώ, δούλεψε
           εθελοντικά στο νοσοκομείο St.Martins με ασθενείς σε ατομικό αλλά και
           ομαδικό πλαίσιο.{" "}
         </p>
@@ -56,9 +55,8 @@ const About = () => {
           ψυχοθεραπεία ζεύγους. Παράλληλα, εκπαιδεύτηκε στην χρήση και ερμηνεία
           του τεστ θεματικής αντίληψης ΤΑΤ και του τεστ προσωπικότητας MMPI-2.
         </p>
-        <Image />
         <p style={{ marginTop: "24px" }}>
-          Είναι μέλος του Mέλος του British Psychological society (BPS) και του
+          Είναι μέλος Mέλος του British Psychological society (BPS) και του
           Canterbury Consortium of Psychoanalytic and Psychodynamic
           Psychotherapists (CCOPPP). Επίσης, είναι πρόσεδρο μέλος της Ελληνικής
           Εταιρείας Αναλυτικής Ομαδικής και Οικογενειακής Ψυχοθεραπείας.

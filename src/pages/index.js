@@ -45,7 +45,7 @@ const IndexPage = () => (
         <div>
           <Quotes
             text="Η αγάπη είναι η μόνη υγιής και ικανοποιητική απάντηση στο πρόβλημα της ανθρώπινης ύπαρξης."
-            author="Erich Fromm, 1900 - 1980"
+            author="Erich Fromm"
           />
         </div>
         <div>

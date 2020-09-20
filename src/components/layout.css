@@ -130,6 +130,9 @@ position: relative;
 width: 100%;
 border-bottom: 1px solid #CCCCCC;
 border-top: 1px solid #DDDDDD;
+display: flex;
+align-items: center;
+height: 200px;
 }
 .footer p {
 margin: 0;
@@ -167,15 +170,13 @@ color: #7F8C8D;
 padding: 0 0 8px 0;
 }
 
-.email{
-border-bottom: 1px solid #fff9;
-}
+
 .footer ul li a {
 padding: 0 0 12px 0;
 display: block;
 }
 .footer a {
-color: white;
+color: white!important;
 font-weight: lighter;
 }
 
@@ -203,9 +204,7 @@ box-shadow: 0 1px 0 #B4B3B3;
 }
 
 
-.footer a {
-color: #78828D
-}
+
 
 .footer-bottom {
 border-top: 1px solid #DDDDDD;

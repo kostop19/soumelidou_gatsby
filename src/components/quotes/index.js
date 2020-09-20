@@ -8,7 +8,7 @@ const Quotes = ({ text, author }) => {
         <div className="cederholm" id="quote-wrapper">
           <div className="quote">
             <blockquote id="quote-quote">{text}</blockquote>
-            <cite id="quote-attrib">{author}</cite>
+            <cite id="quote-attrib" style={{fontWeight: "300", fontSize: 24}}>{author}</cite>
           </div>
           <div className="portrait"></div>
         </div>
