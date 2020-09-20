@@ -8,7 +8,7 @@ const Footer = () => (
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <div style={{ display: "flex"}}>
+            <div style={{ display: "flex", height: "100%", alignItems: "center"}}>
               <div className="material-icons contact-info-icons">home</div>
               <p> Οδυσσέως Ανδρούτσου 29, Κουκάκι</p>
             </div>
@@ -19,6 +19,7 @@ const Footer = () => (
                 display: "flex",
                 justifyContent: "center",
                 marginBottom: "14px",
+                height: "100%", alignItems: "center"
               }}
             >
               <div className="material-icons contact-info-icons">email</div>
