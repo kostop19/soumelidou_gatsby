@@ -29,7 +29,7 @@ const Footer = () => (
               <div className="material-icons contact-info-icons" style={{marginLeft: "12px"}}>
                 perm_phone_msg
               </div>
-              <p>Τηλ. 6942 83 93 91</p>
+              <p>6942 83 93 91</p>
             </div>
            
           </div>
