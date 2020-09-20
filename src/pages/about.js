@@ -12,7 +12,7 @@ const About = () => {
       <StaticQuery
         query={graphql`
           query {
-            placeholderImage: file(relativePath: { eq: "book2.jpg" }) {
+            placeholderImage: file(relativePath: { eq: "book.jpg" }) {
               childImageSharp {
                 fluid(quality: 100) {
                   ...GatsbyImageSharpFluid
